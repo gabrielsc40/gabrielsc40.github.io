@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -9,23 +10,30 @@
   font-family: "Roboto";
 }
 
+:root {
+  --bg-color: #0d0a0b; /* cor de fundo principal*/
+  --second-bg-color: #131313; /* cor de fundo secundária */
+  --text-color: #fff; /* usada para o texto */
+  --main-color: #009fc2; /* como uma cor principal */
+  --second-main-color: #00dad2; /* como uma cor principal */
+}
+
 body {
   margin: 0;
   height: 100vh;
   background: center;
   background: cover;
   background: no-repeat;
-  background-color: #6daddb;
-  background-image: linear-gradient(315deg, #6daddb 0%, #313131 74%);
+  background-color: var(--bg-color);
+  background-image: linear-gradient(315deg, var(--bg-color) 5%, var(--main-color) 100%);
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
   padding: 0.5rem 1rem;
-  color: white;
+  color: var(--text-color);
 }
 
 .navbar .logo {
@@ -46,10 +54,35 @@ body {
 
 .navbar ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
   transition: color 0.3s;
 }
 
-.navbar ul li a:hover {
-  color: #00beb8;
+.tag_open,
+.tag_close {
+  color: var(--second-main-color);
 }
+
+.hover_text {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.hover_text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--second-main-color);
+  transition: width 0.3s ease-in-out;
+}
+
+.hover_text:hover::after {
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
