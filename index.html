@@ -27,43 +27,47 @@
     <title>Gabriel Simões</title>
 </head>
 
-<header>
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="logo ps-5">
+<header class="d-flex justify-content-center align-items-center">
+    <div class="container-fluid row p-0">
+        <nav class="navbar col-12 pt-3">
+            <div class="col-6 logo">
                 <span class="tag_open">
-                    < </span>
-                        Gabriel Simões
-                        <span class="tag_close"> /> </span>
+                    < </span> Gabriel Simões <span class="tag_close"> /> </span>
             </div>
-            <ul class="pe-5">
-                <li><a class="hover_text" href="#">Home</a></li>
-                <li class="hover_text"><a href="#">About</a></li>
-                <li class="hover_text"><a href="#">Skills</a></li>
-                <li class="hover_text"><a href="#">Contact</a></li>
+            <ul class="col-6 d-flex justify-content-end align-items-center ">
+                <li><a class="hover_text mx-4" href="#">Home</a></li>
+                <li><a class="hover_text mx-4" href="#">About</a></li>
+                <li><a class="hover_text mx-4" href="#">Skills</a></li>
+                <li><a class="hover_text" href="#">Contact</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </div>
 </header>
 
 <body>
-    <div class="container summary_job">
-        <div class="title_job">
-            <span>FULL STACK DEVELOPER</span>
-        </div>
-        <div class="dev_name mb-2">
-            <span>Gabriel Simões da Costa</span>
-        </div>
-        <div class="description_job">
-            <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit <br>
-                itaque commodi minima laudantium omnis temporibus eveniet porro,<br>
-                delectus repellat, perferendis, rerum ipsa odit. Porro sapiente<br>
-                reprehenderit perferendis voluptate cumque.
-            </span>
-        </div>
-        <div class="btn_curriculo">
-            <button type="button" class="btn btn-outline-success me-2">BAIXAR CURRÍCULO</button>
+    <div class="container-fluid p-0">
+        <div class="col-12 summary_job d-flex justify-content-between">
+            <div class="col-6">
+                <div class="title_job mb-1">
+                    <span>FULL STACK DEVELOPER</span>
+                </div>
+                <div class="dev_name mb-2">
+                    <span>Gabriel Simões da Costa</span>
+                </div>
+                <div class="description_job mb-3">
+                    <span class="text-align-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit <br>
+                        itaque commodi minima laudantium omnis temporibus eveniet porro,<br>
+                        delectus repellat, perferendis, rerum ipsa odit. Porro sapiente<br>
+                        reprehenderit perferendis voluptate cumque.
+                    </span>
+                </div>
+                <a href="#" type="button" class="btn btn_curriculo me-2">BAIXAR CURRÍCULO</a>
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+                <div class="dev_photo">
+                </div>
+            </div>
         </div>
     </div>
 </body>
