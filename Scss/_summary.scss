@@ -11,17 +11,17 @@ body {
 .title_job{
   color: var(--second-main-color);
   font-weight: 500;
-  font-size: 1vw !important;
+  font-size: var(--second-title) !important;
 }
 
 .dev_name{
-  font-size: 2vw !important;
+  font-size: var(--primary-title) !important;
   color: #fff;
   font-weight: bolder;
 
 }
 .description_job{
-  font-size: 1vw !important;
+  font-size: var(--description) !important;
   color: #fff;
 }
 
@@ -53,7 +53,7 @@ body {
 }
 
 .summary_job{
-  padding: 0px 100px 0px 100px !important;
+  padding: 0px 100px 10vw 100px !important;
 }
 
 .dev_photo{
