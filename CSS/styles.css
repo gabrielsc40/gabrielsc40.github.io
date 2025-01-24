@@ -159,9 +159,6 @@ body {
 }
 
 .about_dev {
-  width: 100vw;
-  height: 25vw;
-  background-color: #0d123f;
   padding: 0px 100px 0vw 100px !important;
 }
 
@@ -181,7 +178,7 @@ body {
   margin: 15px auto;
   border-radius: 5px;
   color: #0f0;
-  font-family: monospace;
+  font-family: Roboto;
   font-size: 12px;
   overflow: hidden;
   padding: 10px;
@@ -217,7 +214,7 @@ body {
 }
 
 .balloon.js {
-  background: #f0db4f;
+  background: #ffd708;
   animation-delay: 3s;
   color: #323330;
 }
