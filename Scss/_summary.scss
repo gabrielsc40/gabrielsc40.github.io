@@ -8,6 +8,10 @@ body {
   background: radial-gradient(circle, rgba(47,62,83,0.9360119047619048) 0%, rgba(32,38,50,1) 65%);
 }
 
+.summary_job{
+  padding: 0px 6vw 13vw 6vw !important;
+}
+
 .title_job{
   color: var(--second-main-color);
   font-weight: 500;
@@ -23,6 +27,7 @@ body {
 .description_job{
   font-size: var(--description) !important;
   color: #fff;
+  font-weight: 300;
 }
 
 .btn_curriculo{
@@ -50,10 +55,6 @@ body {
   color: #fff;
   background-color: var(--main-color);
   border-color: var(--main-color);
-}
-
-.summary_job{
-  padding: 0px 100px 10vw 100px !important;
 }
 
 .dev_photo{

@@ -17,8 +17,8 @@
   --main-color: #009fc2; /* como uma cor principal */
   --second-main-color: #00dad2; /* como uma cor principal */
   --primary-title: 2vw;
-  --second-title: 1vw;
-  --description: 0.9vw;
+  --second-title: 1.2vw;
+  --description: 1.1vw;
 }
 
 .navbar {
@@ -89,6 +89,10 @@ body {
   background: radial-gradient(circle, rgba(47, 62, 83, 0.9360119048) 0%, rgb(32, 38, 50) 65%);
 }
 
+.summary_job {
+  padding: 0px 6vw 13vw 6vw !important;
+}
+
 .title_job {
   color: var(--second-main-color);
   font-weight: 500;
@@ -104,6 +108,7 @@ body {
 .description_job {
   font-size: var(--description) !important;
   color: #fff;
+  font-weight: 300;
 }
 
 .btn_curriculo {
@@ -133,10 +138,6 @@ body {
   border-color: var(--main-color);
 }
 
-.summary_job {
-  padding: 0px 100px 10vw 100px !important;
-}
-
 .dev_photo {
   width: 25vw;
   height: 25vw;
@@ -159,33 +160,16 @@ body {
 }
 
 .about_dev {
-  padding: 0px 100px 0vw 100px !important;
+  padding: 0px 5vw 0vw 5vw !important;
 }
 
-.notebook {
-  width: 300px;
-  height: 200px;
-  background: #333;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-
-.notebook-screen {
-  width: 90%;
-  height: 70%;
-  background: #1e1e1e;
-  margin: 15px auto;
-  border-radius: 5px;
-  color: #0f0;
-  font-family: Roboto;
-  font-size: 12px;
-  overflow: hidden;
-  padding: 10px;
+.developer_img {
+  width: 28vw;
+  height: 22vw;
 }
 
 .balloon {
-  position: absolute;
+  position: relative;
   width: 60px;
   height: 60px;
   background-color: #ccc;
@@ -229,19 +213,20 @@ body {
 }
 .about_title {
   color: #fff;
-  font-size: var(--second-title);
+  font-size: 2vw;
   font-weight: bolder;
 }
 
 .about_sub_title {
   color: #fff;
   font-size: var(--second-title);
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .about_description {
   color: #fff;
   font-size: var(--description);
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=styles.css.map */
