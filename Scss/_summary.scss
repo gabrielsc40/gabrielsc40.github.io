@@ -1,21 +1,13 @@
-body {
-  margin: 0;
-  height: 100vh;
-  background: center;
-  background: cover;
-  background: no-repeat;
-  background: rgb(47,62,83);
-  background: radial-gradient(circle, rgba(47,62,83,0.9360119047619048) 0%, rgba(32,38,50,1) 65%);
-}
-
 .summary_job{
-  padding: 0px 6vw 13vw 6vw !important;
+  position: relative;
+  z-index: 500;
+  padding: 0px 6vw 10vw 6vw !important;
 }
 
-.title_job{
+.name{
   color: var(--second-main-color);
+  font-size: var(--primary-title) !important;
   font-weight: 500;
-  font-size: var(--second-title) !important;
 }
 
 .dev_name{

@@ -21,14 +21,120 @@
   --description: 1.1vw;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000;
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #000000 0%, #092247 50%, #000000 100%);
+  overflow: hidden;
+  z-index: -1000;
+}
+
+.about_background {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  background: radial-gradient(circle, rgba(0, 40, 61, 0.936) 0%, rgb(0, 17, 27) 65%);
+  overflow: hidden;
+  z-index: -1000;
+  clip-path: polygon(74% 4%, 100% 0, 100% 100%, 0 100%, 0 4%, 20% 0);
+}
+
+/* Grid Pattern */
+.grid-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgba(0, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+  transform: perspective(500px) rotateX(60deg);
+  transform-origin: center top;
+  animation: gridMove 20s linear infinite;
+}
+
+.grid-pattern::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(0, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.5) 50%, transparent 100%);
+}
+
+/* Animations */
+@keyframes gridMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30px 30px;
+  }
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes glow1 {
+  0% {
+    opacity: 0.3;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  }
+  100% {
+    opacity: 0.6;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+  }
+}
+@keyframes glow2 {
+  0% {
+    opacity: 0.2;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  }
+  100% {
+    opacity: 0.5;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+  }
+}
+@keyframes glow3 {
+  0% {
+    opacity: 0.4;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.25);
+  }
+  100% {
+    opacity: 0.7;
+    box-shadow: 0 0 22px rgba(0, 255, 255, 0.45);
+  }
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid-pattern {
+    background-size: 20px 20px;
+  }
+  .icon {
+    font-size: 1.5rem;
+  }
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5% !important;
   padding: 0.5rem 1rem;
   color: var(--text-color);
-  padding: 25px 100px 0px 100px !important;
+  z-index: 100;
+  padding: 1vw 0vw 10vw 0vw !important;
 }
 
 .navbar .logo {
@@ -79,24 +185,16 @@
   width: 100%;
 }
 
-body {
-  margin: 0;
-  height: 100vh;
-  background: center;
-  background: cover;
-  background: no-repeat;
-  background: rgb(47, 62, 83);
-  background: radial-gradient(circle, rgba(47, 62, 83, 0.9360119048) 0%, rgb(32, 38, 50) 65%);
-}
-
 .summary_job {
-  padding: 0px 6vw 13vw 6vw !important;
+  position: relative;
+  z-index: 500;
+  padding: 0px 6vw 10vw 6vw !important;
 }
 
-.title_job {
+.name {
   color: var(--second-main-color);
+  font-size: var(--primary-title) !important;
   font-weight: 500;
-  font-size: var(--second-title) !important;
 }
 
 .dev_name {
@@ -160,7 +258,7 @@ body {
 }
 
 .about_dev {
-  padding: 0px 6vw 13vw 6vw !important;
+  padding: 13vw 6vw 13vw 6vw !important;
 }
 
 .developer_img {

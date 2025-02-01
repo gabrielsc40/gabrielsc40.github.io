@@ -3,10 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5% !important;
   padding: 0.5rem 1rem;
   color: var(--text-color);
-  padding: 25px 100px 0px 100px !important;
+  z-index: 100;
+  padding: 1vw 0vw 10vw 0vw !important;
 }
 
 .navbar .logo {

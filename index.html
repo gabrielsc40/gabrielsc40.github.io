@@ -27,48 +27,56 @@
     <title>Gabriel Simões</title>
 </head>
 
-<header class="d-flex justify-content-center align-items-center">
-    <div class="container-fluid row p-0">
-        <nav class="navbar col-12 pt-3">
-            <div class="col-6 logo">
-                <span class="tag_open">
-                    < </span> Gabriel Simões <span class="tag_close"> /> </span>
-            </div>
-            <ul class="col-6 d-flex justify-content-end align-items-center ">
-                <li><a class="hover_text mx-4" href="#">Home</a></li>
-                <li><a class="hover_text mx-4" href="#">About</a></li>
-                <li><a class="hover_text mx-4" href="#">Skills</a></li>
-                <li><a class="hover_text" href="#">Contact</a></li>
-            </ul>
-        </nav>
+<section>
+    <!-- Background Topo -->
+    <div class="background">
+        <div class="grid-pattern"></div>
     </div>
-</header>
 
-<body>
-    <div class="container-fluid p-0">
-        <div class="col-12 summary_job d-flex justify-content-between align-items-center">
-            <div class="col-6">
-                <div class="title_job mb-1">
-                    <span>FULL STACK DEVELOPER</span>
+    <header>
+        <!-- Navbar -->
+        <div class="container">
+            <nav class="navbar col-12 pt-3">
+                <div class="col-6 logo">
+                    <span class="tag_open">
+                        < </span> Gabriel Simões <span class="tag_close"> /> </span>
                 </div>
-                <div class="dev_name mb-1">
-                    <span>Gabriel Simões da Costa</span>
-                </div>
-                <div class="description_job mb-3">
-                    <span class="text-align-justify">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit <br>
-                        itaque commodi minima laudantium omnis temporibus eveniet porro,<br>
-                        delectus repellat, perferendis, rerum ipsa odit. Porro sapiente<br>
-                        reprehenderit perferendis voluptate cumque.
-                    </span>
-                </div>
-                <a href="#" type="button" class="btn btn_curriculo me-2">BAIXAR CURRÍCULO</a>
-            </div>
-            <div class="col-6 d-flex justify-content-end align-items-center">
-                <div class="dev_photo">
-                </div>
-            </div>
+                <ul class="col-6 d-flex justify-content-end align-items-center ">
+                    <li><a class="hover_text mx-4" href="#">Home</a></li>
+                    <li><a class="hover_text mx-4" href="#">About</a></li>
+                    <li><a class="hover_text mx-4" href="#">Skills</a></li>
+                    <li><a class="hover_text" href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+    <!-- Corpo -->
+
+    <div class="container-fluid">
+        <!-- Sumario -->
+        <div class="summary_job d-flex flex-column justify-content-center align-items-center">
+            <div class=" dev_name mb-3">
+                <span>Olá, eu sou <span class="name">Gabriel Simões</span></span>
+            </div>
+            <div class="description_job mb-3">
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit <br>
+                    itaque commodi minima laudantium omnis temporibus eveniet porro,<br>
+                    delectus repellat, perferendis, rerum ipsa odit. Porro sapiente<br>
+                    reprehenderit perferendis voluptate cumque.
+                </span>
+            </div>
+            <a href="#" type="button" class="btn btn_curriculo me-2">BAIXAR CURRÍCULO</a>
+        </div>
+    </div>
+
+    <!-- Background Sobre -->
+    <div class="about_background"></div>
+
+    <div class="container-fluid">
+
+
+        <!-- Sobre -->
         <div class="col-12 about_dev d-flex">
             <div class="col-6 d-flex justify-content-start align-items-center">
                 <div class="developer_img">
@@ -94,20 +102,23 @@
                     </div>
                     <div class="info_dev pb-2">
                         <div class="about_sub_title">
-                            <span>Get to know a little about me</span>
+                            <span>Conheça um pouco sobre mim</span>
                         </div>
                     </div>
                     <div class="info_dev">
                         <div class="about_description">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                                Illum beatae explicabo placeat doloremque excepturi in eligendi <br>
-                                incidunt odit, blanditiis ipsum, odio officia iusto laudantium <br>
-                                assumenda cum earum molestiae, necessitatibus veritatis.</span>
+                            <span>Sou um desenvolvedor PHP Full-stack com 1 ano de experiência<br>
+                                no desenvolvimento de aplicações web robustas, escaláveis e de<br>
+                                alto desempenho. Minha expertise abrange tanto o front-end quanto<br>
+                                o back-end, permitindo-me criar soluções integradas que atendem<br>
+                                às necessidades dos usuários e dos negócios.<br></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Habilidades -->
         <div class="col-12 dev_skills">
             <div class="skills d-flex justify-content-between align-items-center">
                 <div class="skill_html">
@@ -131,9 +142,6 @@
             </div>
         </div>
     </div>
-
-</body>
-
-
+</section>
 
 </html>
