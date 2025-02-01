@@ -36,16 +36,16 @@
     <header>
         <!-- Navbar -->
         <div class="container">
-            <nav class="navbar col-12 pt-3">
+            <nav id="nav" class="navbar col-12 pt-3">
                 <div class="col-6 logo">
                     <span class="tag_open">
                         < </span> Gabriel Simões <span class="tag_close"> /> </span>
                 </div>
-                <ul class="col-6 d-flex justify-content-end align-items-center ">
-                    <li><a class="hover_text mx-4" href="#">Home</a></li>
-                    <li><a class="hover_text mx-4" href="#">About</a></li>
-                    <li><a class="hover_text mx-4" href="#">Skills</a></li>
-                    <li><a class="hover_text" href="#">Contact</a></li>
+                <ul class="col-6 d-flex justify-content-end align-items-center">
+                    <li><a class="hover_text mx-4" onclick="setActiveLink(this)" href="#nav">Home</a></li>
+                    <li><a class="hover_text mx-4" onclick="setActiveLink(this)" href="#about_title">About</a></li>
+                    <li><a class="hover_text mx-4" onclick="setActiveLink(this)" href="#dev_skills">Skills</a></li>
+                    <li><a class="hover_text" onclick="setActiveLink(this)" href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -54,32 +54,37 @@
 
     <div class="container-fluid">
         <!-- Sumario -->
-        <div class="summary_job d-flex flex-column justify-content-center align-items-center">
-            <div class=" dev_name mb-3">
+        <div id="summary_job" class="d-flex flex-column justify-content-center align-items-center">
+            <div class="dev_name">
                 <span>Olá, eu sou <span class="name">Gabriel Simões</span></span>
             </div>
-            <div class="description_job mb-3">
-                <span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit <br>
-                    itaque commodi minima laudantium omnis temporibus eveniet porro,<br>
-                    delectus repellat, perferendis, rerum ipsa odit. Porro sapiente<br>
-                    reprehenderit perferendis voluptate cumque.
-                </span>
+            <p class="description_job">
+                Atuo como Desenvolvedor Full Stack, responsável por projetar, desenvolver e manter
+                aplicações web completas, desde a concepção até a entrega final.
+            </p>
+            <div>
+                <a href="https://www.linkedin.com/in/gabriel-sim%C3%B5es-231634179/" target="linkedin" type="button"
+                    class="btn btn_midia_social me-2"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/gabrielsc40" target="github" type="button" class="btn btn_midia_social"><i
+                        class="bi bi-github"></i></i></a>
             </div>
-            <a href="#" type="button" class="btn btn_curriculo me-2">BAIXAR CURRÍCULO</a>
         </div>
     </div>
 
     <!-- Background Sobre -->
     <div class="about_background"></div>
-
+    <div class="space"></div>
     <div class="container-fluid">
-
-
         <!-- Sobre -->
-        <div class="col-12 about_dev d-flex">
-            <div class="col-6 d-flex justify-content-start align-items-center">
-                <div class="developer_img">
+        <div id="about_title" class="d-flex justify-content-center align-items-start">
+            <span>About me</span>
+        </div>
+        <div id="about_dev" class="col-12 d-flex">
+            <div class="img col-6 d-flex justify-content-start align-items-center">
+                <div class="dev_photo">
+                    <img src="/img/photo_dev.jpg" alt="">
+                </div>
+                <!-- <div class="developer_img">
                     <img src="/img/developer_img.png">
                 </div>
                 <div class="icon_language">
@@ -91,14 +96,12 @@
                             src="/img/icon_html.png"></div>
                     <div class="balloon js" style="bottom: 17vw; right: 23vw;"><img style="width: 3.5vw;"
                             src="/img/icon_js.png"></div>
-                </div>
+                </div> -->
             </div>
+
             <div class="col-6 d-flex justify-content-end align-items-center">
                 <div class="description_dev">
                     <div class="info_dev pb-2">
-                        <div class="about_title">
-                            <span>About</span>
-                        </div>
                     </div>
                     <div class="info_dev pb-2">
                         <div class="about_sub_title">
@@ -119,8 +122,8 @@
         </div>
 
         <!-- Habilidades -->
-        <div class="col-12 dev_skills">
-            <div class="skills d-flex justify-content-between align-items-center">
+        <div class="col-12 ">
+            <div id="dev_skills" class="d-flex justify-content-between align-items-center">
                 <div class="skill_html">
                     <span>HTML</span>
                 </div>

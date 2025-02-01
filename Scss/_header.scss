@@ -40,6 +40,7 @@
   position: relative;
   font-size: 20px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .hover_text::after {
@@ -54,5 +55,9 @@
 }
 
 .hover_text:hover::after {
+  width: 100%;
+}
+
+.hover_text.active::after {
   width: 100%;
 }

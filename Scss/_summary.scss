@@ -1,72 +1,50 @@
-.summary_job{
+#summary_job {
+  transition: opacity 0.5s ease, transform 0.5s ease;
   position: relative;
   z-index: 500;
-  padding: 0px 6vw 10vw 6vw !important;
+  padding: 0vw 6vw 18vw 6vw !important;
 }
 
-.name{
+.hide-section {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+
+.show-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.name {
   color: var(--second-main-color);
   font-size: var(--primary-title) !important;
   font-weight: 500;
 }
 
-.dev_name{
+.dev_name {
   font-size: var(--primary-title) !important;
-  color: #fff;
+  color: var(--text-color);
   font-weight: bolder;
-
 }
-.description_job{
+.description_job {
   font-size: var(--description) !important;
-  color: #fff;
-  font-weight: 300;
+  color: var(--text-color);
+  font-weight: 200;
+  white-space: pre-line;
+  text-align: center;
 }
 
-.btn_curriculo{
-  color: var(--second-main-color);
-  border-color: var(--second-main-color);
+.btn_midia_social {
+  color: var(--text-color);
+  border-color: var(--text-color);
   background-color: transparent;
   transition: all 0.15s ease-in-out;
-}
-
-.btn_curriculo:hover {
-  color: #fff;
-  background-color: #006b83;
-  border-color: var(--main-color);
-}
-
-.btn_curriculo:focus {
-  color: var(--second-main-color);
-  background-color: transparent;
-  border-color: var(--main-color);
-  box-shadow: 0 0 0 0.2rem rgba(6, 180, 211, 0.5);
-  outline: none;
-}
-
-.btn_curriculo:active {
-  color: #fff;
-  background-color: var(--main-color);
-  border-color: var(--main-color);
-}
-
-.dev_photo{
-  width: 25vw;
-  height: 25vw;
-  border: 1px solid #fff;
   border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.14);
-  transition: 0.5s;
 }
 
-.dev_photo:hover {
-  border: 5px solid;
-  box-shadow: 0px 0px 10px 10px rgba(13, 250, 242, 0.3);
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(13, 250, 242, 0.3);
-  -moz-box-shadow: 0px 0px 10px 10px rgba(13, 250, 242, 0.3);
-  transition: all 0.5s ease;
-  border: 0px;
+.btn_midia_social:hover {
+  color: var(--main-color);
+  border-color: var(--second-main-color);
+  box-shadow: 0 0 0 0.1rem rgba(6, 180, 211, 0.5);
 }
-

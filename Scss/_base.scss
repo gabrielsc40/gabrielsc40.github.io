@@ -7,17 +7,18 @@
   outline: none;
   scroll-behavior: smooth;
   font-family: "Roboto";
+  scroll-behavior: smooth;
 }
 
 :root {
   --bg-color: #202632;; /* cor de fundo principal*/
   --second-bg-color: #2f3e53; /* cor de fundo secundária */
-  --text-color: #fff; /* usada para o texto */
+  --text-color: #e4e4e4; /* usada para o texto */
   --main-color: #009fc2; /* como uma cor principal */
   --second-main-color: #00dad2; /* como uma cor principal */
-  --primary-title: 2vw;
+  --primary-title: 2.5vw;
   --second-title: 1.2vw;
-  --description: 1.1vw;
+  --description: 1vw;
 }
 
 body {
@@ -43,7 +44,7 @@ body {
   background: radial-gradient(circle, rgba(0, 40, 61, 0.936) 0%, rgb(0, 17, 27) 65%);
   overflow: hidden;
   z-index: -1000;
-  clip-path: polygon(74% 4%, 100% 0, 100% 100%, 0 100%, 0 4%, 20% 0);
+  clip-path: polygon(74% 4%, 100% 0, 100% 100%, 0 100%, 0 4%, 20% 0%);
 }
 
 /* Grid Pattern */
