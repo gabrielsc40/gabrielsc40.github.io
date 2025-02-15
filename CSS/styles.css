@@ -497,7 +497,41 @@ body {
 */
 #dev_skills {
   color: #fff;
-  padding: 0px 6vw 13vw 6vw !important;
+  padding: 1.5vw 6vw 1.5vw 6vw !important;
+  background: rgb(0, 35, 53);
+  background: linear-gradient(90deg, rgb(0, 35, 53) 14%, rgb(0, 42, 64) 38%, rgb(0, 78, 119) 76%, rgb(0, 78, 119) 91%, rgb(0, 84, 128) 100%);
+  display: flex;
+  width: 200%;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill {
+  width: 20%;
+  text-align: center;
+}
+
+.skill, img {
+  width: 20%;
+  height: auto;
+}
+
+.skill, span {
+  font-weight: 600;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
