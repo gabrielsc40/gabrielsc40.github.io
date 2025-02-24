@@ -45,6 +45,8 @@
                     <li><a class="hover_text mx-4" onclick="setActiveLink(this)" href="#nav">Home</a></li>
                     <li><a class="hover_text mx-4" onclick="setActiveLink(this)" href="#about_title">About</a></li>
                     <li><a class="hover_text mx-4" onclick="setActiveLink(this)" href="#dev_skills">Skills</a></li>
+                    <li><a class="hover_text mx-4" onclick="setActiveLink(this)" href="#dev_portfolio">Portifolio</a>
+                    </li>
                     <li><a class="hover_text" onclick="setActiveLink(this)" href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -72,17 +74,17 @@
     </div>
 
     <!-- Background Sobre -->
-    <div class="about_background"></div>
+    <div id="background_secondary"></div>
     <div class="space"></div>
     <div class="container-fluid">
         <!-- Sobre -->
-        <div id="about_title" class="d-flex justify-content-center align-items-center">
-            <span class="about_title_primary">ABOUT ME</span>
-            <span class="about_title_secondary">ABOUT ME</span>
+        <div id="title" class="d-flex justify-content-center align-items-center">
+            <span class="title_primary">ABOUT ME</span>
+            <span class="title_secondary">ABOUT ME</span>
         </div>
         <div class="line">
-            <div class="about_line_primary"></div>
-            <div class="about_line_secondary"></div>
+            <div class="line_primary"></div>
+            <div class="line_secondary"></div>
         </div>
 
         <div id="about_dev" class="col-12 d-flex">
@@ -90,19 +92,6 @@
                 <div class="dev_photo">
                     <img src="/img/photo_dev.jpg" alt="">
                 </div>
-                <!-- <div class="developer_img">
-                    <img src="/img/developer_img.png">
-                </div>
-                <div class="icon_language">
-                    <div class="balloon php" style="top: 1vw; right: 2vw;"><img style="width: 2.5vw;"
-                            src="/img/icon_php.png"></div>
-                    <div class="balloon css" style="top: 13vw; left: 1vw;"><img style="width: 2.2vw;"
-                            src="/img/icon_css.png"></div>
-                    <div class="balloon html" style="top: 5vw; right: 27vw;"><img style="width: 2.6vw;"
-                            src="/img/icon_html.png"></div>
-                    <div class="balloon js" style="bottom: 17vw; right: 23vw;"><img style="width: 3.5vw;"
-                            src="/img/icon_js.png"></div>
-                </div> -->
             </div>
 
             <div class="col-6 d-flex justify-content-start align-items-center">
@@ -116,21 +105,22 @@
                     </div>
                     <div class="info_dev">
                         <div class="about_description mb-3">
-                            <span>Sou um desenvolvedor PHP Full-stack com 1 ano de experiência<br>
-                                no desenvolvimento de aplicações web robustas, escaláveis e de<br>
-                                alto desempenho. Minha expertise abrange tanto o front-end quanto<br>
-                                o back-end, permitindo-me criar soluções integradas que atendem<br>
-                                às necessidades dos usuários e dos negócios.<br></span>
+                            <span>Sou um desenvolvedor PHP Full-stack com 1 ano e alguns meses de experiência no
+                                desenvolvimento de aplicações web robustas, escaláveis e de alto desempenho. Minha
+                                expertise abrange tanto o front-end quanto o back-end, permitindo-me criar soluções
+                                integradas que atendem às necessidades dos usuários e dos negócios.</span>
                         </div>
                         <div class="col-12 d-flex">
                             <div
                                 class="col-2 about_info_title d-flex flex-column justify-content-start align-items-start">
                                 <span>Birthday</span>
+                                <span>Education</span>
                                 <span>Phone</span>
                                 <span>Email</span>
                             </div>
                             <div class="about_info d-flex flex-column justify-content-start align-items-start mb-5">
                                 <span>: Nov 13, 1999</span>
+                                <span>: Sistema de Infomação (Anhanguera) - Em curso</span>
                                 <span>: +55 (37) 99952-2120</span>
                                 <span>: gabrielsimoesc40@gmail.com</span>
                             </div>
@@ -148,32 +138,91 @@
     </div>
 
     <!-- Habilidades -->
-    <div class="col-12 ">
-        <div class="carousel-container">
-            <div id="dev_skills" class="d-flex justify-content-between align-items-center">
-                <div class="skill skill_html d-flex flex-column align-items-center">
-                    <img class="mb-2" src="/img/skill_html.png">
-                    <span>HTML</span>
+    <div id="dev_skills" class="col-12 pb-5">
+        <div class="pb-5">
+            <div id="title" class="d-flex justify-content-center align-items-center">
+                <span class="title_primary">MY SKILLS</span>
+                <span class="title_secondary">MY SKILLS</span>
+            </div>
+            <div class="line">
+                <div class="line_primary"></div>
+                <div class="line_secondary"></div>
+            </div>
+        </div>
+
+        <div class="pt-5 d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <div class="skill skill_html d-flex flex-column justify-content-center align-items-center">
+                        <img src="/img/skill_html.png">
+                        <span class="title-caption">HTML</span>
+                        <span class="caption">Tenho ampla experiência em HTML, com habilidades para estruturar páginas
+                            web de forma semântica e acessível. Domino o uso de tags, atributos e elementos
+                            essenciais.</span>
+                    </div>
+                    <div class="skill skill_css d-flex flex-column justify-content-center align-items-center">
+                        <img src="/img/skill_css.png">
+                        <span class="title-caption">CSS</span>
+                        <span class="caption">Capacidade para criar designs responsivos e visualmente atraentes. Domino
+                            técnicas como Flexbox, Grid Layout, animações e transições, SASS garantindo interfaces
+                            modernas e
+                            fluidas.</span>
+                    </div>
+                    <div class="skill skill_javascript d-flex flex-column justify-content-center align-items-center">
+                        <img src="/img/skill_javascript.png">
+                        <span class="title-caption">JavaScript</span>
+                        <span class="caption">Possuo sólida experiência em JavaScript, com habilidades para desenvolver
+                            aplicações web dinâmicas e interativas. Domino conceitos como manipulação do DOM, eventos,
+                            AJAX</span>
+                    </div>
                 </div>
-                <div class="skill skill_css d-flex flex-column align-items-center">
-                    <img class="mb-2" src="/img/skill_css.png">
-                    <span>Css</span>
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <div class="skill skill_PHP d-flex flex-column justify-content-center align-items-center">
+                        <img src="/img/skill_php.png">
+                        <span class="title-caption">PHP</span>
+                        <span class="caption">Tenho experiência sólida em PHP, com habilidades para desenvolver
+                            aplicações web dinâmicas e escaláveis. Manipulação de bancos de dados
+                            MySQL, criação de APIs RESTful e integração com front-end.</span>
+                    </div>
+                    <div class="skill skill_Bootstrap d-flex flex-column justify-content-center align-items-center">
+                        <img src="/img/skill_bootstrap.png">
+                        <span class="title-caption">BOOTSTRAP</span>
+                        <span class="caption">Possuo habilidades avançadas em Bootstrap, com capacidade para criar
+                            interfaces responsivas e modernas de forma ágil. Domino o uso do sistema de grid e
+                            componentes pré-estilizados.</span>
+                    </div>
+                    <div class="skill skill_Jquery d-flex flex-column justify-content-center align-items-center">
+                        <img src="/img/skill_jquery.png">
+                        <span class="title-caption">JQUERY</span>
+                        <span class="caption">Tenho experiência em jQuery, com habilidades para simplificar a
+                            manipulação do DOM, gerenciamento de eventos e criação de animações de forma
+                            eficiente.</span>
+                    </div>
                 </div>
-                <div class="skill skill_javascript d-flex flex-column align-items-center">
-                    <img class="mb-2" src="/img/skill_javascript.png">
-                    <span>Javascript</span>
-                </div>
-                <div class="skill skill_PHP d-flex flex-column align-items-center">
-                    <img class="mb-2" src="/img/skill_php.png">
-                    <span>PHP</span>
-                </div>
-                <div class="skill skill_Bootstrap d-flex flex-column align-items-center">
-                    <img class="mb-2" src="/img/skill_bootstrap.png">
-                    <span>Bootstrap</span>
-                </div>
-                <div class="skill skill_Jquery d-flex flex-column align-items-center">
-                    <img class="mb-2" src="/img/skill_jquery.png">
-                    <span>Jquery</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portifolios -->
+    <div id="dev_portfolio" class="col-12">
+        <div class="pb-5">
+            <div id="title" class="d-flex justify-content-center align-items-center">
+                <span class="title_primary">PORTFOLIO</span>
+                <span class="title_secondary">PORTFOLIO</span>
+            </div>
+            <div class="line">
+                <div class="line_primary"></div>
+                <div class="line_secondary"></div>
+            </div>
+        </div>
+
+        <div class="pt-5 d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <div class="portifolio d-flex flex-column justify-content-center align-items-center">
+                        <span class="title-caption">TCPDF</span>
+                        <img src="/img/Imagem_editada.png">
+                    </div>
                 </div>
             </div>
         </div>

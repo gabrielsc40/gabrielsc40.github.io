@@ -1,0 +1,20 @@
+.portifolio {
+  width: 400px !important;
+  height: 400px !important;
+  margin: 10px;
+  background-color: #202632;
+  border: 0.1px solid #31394b;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.portifolio img {
+  width: 400px !important;
+  height: 400px !important;
+  transition: 0.5s ease;
+}
+
+.portifolio img:hover {
+  width: auto;
+  height: 150px;
+}

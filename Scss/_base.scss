@@ -11,7 +11,7 @@
 }
 
 :root {
-  --bg-color: #202632;; /* cor de fundo principal*/
+  --bg-color: #202632; /* cor de fundo principal*/
   --second-bg-color: #2f3e53; /* cor de fundo secundária */
   --text-color: #e4e4e4; /* usada para o texto */
   --main-color: #009fc2; /* como uma cor principal */
@@ -29,34 +29,39 @@ body {
 }
 
 .background {
-  position:fixed;
+  position: fixed;
   width: 100vw;
-  height: 100vh;  
+  height: 100vh;
   background: linear-gradient(135deg, #000000 0%, #092247 50%, #000000 100%);
   overflow: hidden;
   z-index: -1000;
 }
 
-.about_background {
-  position:absolute;
+#background_secondary {
+  position: absolute;
   width: 100vw;
-  height: 100vw;
-  background: radial-gradient(circle, rgba(0, 40, 61, 0.936) 0%, rgb(0, 17, 27) 65%);
+  height: 200vw;
+  background: radial-gradient(
+    circle,
+    rgba(0, 40, 61, 0.936) 0%,
+    rgb(0, 17, 27) 65%
+  );
   overflow: hidden;
   z-index: -1000;
-  clip-path: polygon(74% 4%, 100% 0, 100% 100%, 0 100%, 0 4%, 20% 0%);
+  clip-path: polygon(50% 3%, 100% 0, 100% 100%, 0 100%, 0 3%, 20% 0%);
 }
 
-/* Grid Pattern */
 .grid-pattern {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: 
-      linear-gradient(rgba(0, 255, 255, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+  background-image: linear-gradient(
+      rgba(0, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 30px 30px;
   transform: perspective(500px) rotateX(60deg);
   transform-origin: center top;
@@ -64,79 +69,139 @@ body {
 }
 
 .grid-pattern::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 50% 0%, 
-      rgba(0, 255, 255, 0.2) 0%, 
-      rgba(0, 0, 0, 0.5) 50%, 
-      transparent 100%);
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(0, 255, 255, 0.2) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    transparent 100%
+  );
 }
 
 /* Animations */
 @keyframes gridMove {
   0% {
-      background-position: 0 0;
+    background-position: 0 0;
   }
   100% {
-      background-position: 30px 30px;
+    background-position: 30px 30px;
   }
 }
 
 @keyframes float {
-  0%, 100% {
-      transform: translateY(0);
+  0%,
+  100% {
+    transform: translateY(0);
   }
   50% {
-      transform: translateY(-20px);
+    transform: translateY(-20px);
   }
 }
 
 @keyframes glow1 {
   0% {
-      opacity: 0.3;
-      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    opacity: 0.3;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
   }
   100% {
-      opacity: 0.6;
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+    opacity: 0.6;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
   }
 }
 
 @keyframes glow2 {
   0% {
-      opacity: 0.2;
-      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    opacity: 0.2;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
   }
   100% {
-      opacity: 0.5;
-      box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+    opacity: 0.5;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
   }
 }
 
 @keyframes glow3 {
   0% {
-      opacity: 0.4;
-      box-shadow: 0 0 12px rgba(0, 255, 255, 0.25);
+    opacity: 0.4;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.25);
   }
   100% {
-      opacity: 0.7;
-      box-shadow: 0 0 22px rgba(0, 255, 255, 0.45);
+    opacity: 0.7;
+    box-shadow: 0 0 22px rgba(0, 255, 255, 0.45);
   }
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .grid-pattern {
-      background-size: 20px 20px;
+    background-size: 20px 20px;
   }
-  
+
   .icon {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 }
 
+#title {
+  position: relative;
+  display: inline-block;
+  padding-top: 3vw;
+  color: #fff;
+  font-weight: bolder;
+}
 
+.line {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.line_primary {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--second-main-color);
+  z-index: 500;
+}
+
+.line_secondary {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 240px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--text-color);
+  z-index: 400;
+}
+
+.title_primary {
+  font-size: 32px;
+  font-weight: 400;
+  position: relative;
+  z-index: 500;
+}
+
+.title_secondary {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  opacity: 5%;
+  font-size: 5vw;
+  font-weight: 800;
+}
+
+.space {
+  padding-bottom: 8vw;
+}

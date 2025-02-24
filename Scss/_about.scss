@@ -33,10 +33,6 @@
   opacity: 1;
 }
 
-.space {
-  padding-bottom: 5vw;
-}
-
 .img {
   padding-left: 5vw;
 }
@@ -73,61 +69,6 @@
   transition: all 0.5s ease;
 }
 
-#about_title {
-  position: relative;
-  display: inline-block;
-  padding-top: 3vw;
-  color: #fff;
-  font-weight: bolder;
-}
-
-.line{
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-
-.about_line_primary {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 100px;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--second-main-color);
-  z-index: 500;
-}
-
-.about_line_secondary {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 240px;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--text-color);
-  z-index: 400;
-}
-
-.about_title_primary{
-  font-size: 32px;
-  font-weight: 400;
-  position: relative;
-  z-index: 500;
-}
-
-.about_title_secondary {
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  opacity: 5%;
-  font-size: 5vw;
-  font-weight: 800;
-}
-
 .about_sub_title {
   color: var(--second-main-color);
   font-size: 30px;
@@ -149,14 +90,14 @@
   font-weight: 300;
 }
 
-.about_info{
+.about_info {
   color: var(--text-color);
   color: #fff;
   font-size: 20px;
   font-weight: 300;
 }
 
-/* From Uiverse.io by gharsh11032000 */ 
+/* From Uiverse.io by gharsh11032000 */
 .animated-button {
   position: relative;
   display: inline-block;
@@ -170,7 +111,7 @@
   box-shadow: 0 0 0 2px #ffffff34;
   cursor: pointer;
   overflow: hidden;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .animated-button span:last-child {
@@ -180,10 +121,10 @@
   transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
-  background-color: #2196F3;
+  background-color: #2196f3;
   border-radius: 50%;
   opacity: 0;
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .animated-button span:first-child {
