@@ -1,4 +1,3 @@
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -6,12 +5,74 @@
   padding: 0.5rem 1rem;
   color: var(--text-color);
   z-index: 100;
-  padding: 1vw 0vw 10vw 0vw !important;
+  margin-bottom: 10vw !important;
 }
 
-.navbar .logo {
-  font-size: 1.5rem;
+.navbar, .tag_name {
+  font-size: 1.3rem;
   font-weight: bold;
+}
+
+/* .icon_menu{
+  color: #fff;
+  font-size: 2rem;
+} */
+
+.navbar-toggler{
+  border: none !important;
+  box-shadow: none;
+  padding: 2px 6px;
+}
+
+.navbar-toggler:focus{
+  border: 1px solid #fff !important;
+  box-shadow: none;
+}
+
+.hamburger {
+  height: 50px;
+  width: 50px;
+  transform: 0.2s;
+  position: relative;
+}
+.hamburger .checkbox {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.line {
+  transition: 0.5s;
+  stroke-width: 5px;
+  stroke: #fff;
+}
+.lineTop {
+  stroke-dasharray: 40 40;
+  stroke-dashoffset: 25;
+}
+.lineBottom {
+  stroke-dasharray: 40 40;
+  stroke-dashoffset: 60;
+}
+.lineMid {
+  stroke-dasharray: 40 40;
+}
+.hamburger .checkbox:checked + svg .line {
+  stroke: var(--second-main-color);
+}
+.hamburger .checkbox:checked + svg .lineTop {
+  stroke-dashoffset: 0;
+  transform-origin: left;
+  transform: rotateZ(45deg) translate(-7px, -5px);
+}
+.hamburger .checkbox:checked + svg .lineMid {
+  stroke-dashoffset: 40;
+}
+.hamburger .checkbox:checked + svg .lineBottom {
+  stroke-dashoffset: 0;
+  transform-origin: left;
+  transform: rotateZ(-45deg) translate(-5px, 5px);
 }
 
 .navbar ul {
@@ -30,10 +91,7 @@
   transition: color 0.3s;
 }
 
-.tag_open,
-.tag_close {
-  color: var(--second-main-color);
-}
+
 
 .hover_text {
   display: inline-block;
@@ -41,6 +99,10 @@
   font-size: 20px;
   text-decoration: none;
   cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #fff;
 }
 
 .hover_text::after {

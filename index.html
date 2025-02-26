@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -36,19 +40,32 @@
     <header>
         <!-- Navbar -->
         <div class="container">
-            <nav id="nav" class="navbar col-12 pt-3">
-                <div class="col-6 logo">
-                    <span class="tag_open">
-                        < </span> Gabriel Simões <span class="tag_close"> /> </span>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <span class="tag_name">< Gabriel Simões /></span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="hamburger">
+                            <input class="checkbox" type="checkbox" />
+                            <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
+                            <path class="lineTop line" stroke-linecap="round" stroke-width="4" stroke="black" d="M6 11L44 11"></path>
+                            <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 24H43" class="lineMid line"></path>
+                            <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 37H43" class="lineBottom line" ></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav list_menu ms-auto">
+                            <li class="nav-item"><a class="nav-link hover_text" href="#nav">Home</a></li>
+                            <li class="nav-item"><a class="nav-link hover_text" href="#about_title">About</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link hover_text" href="#dev_skills">Skills</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link hover_text" href="#dev_portfolio">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link hover_text" href="#">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <ul class="col-6 d-flex justify-content-end align-items-center">
-                    <li><a class="hover_text mx-4" onclick="setActiveLink(this)" href="#nav">Home</a></li>
-                    <li><a class="hover_text mx-4" onclick="setActiveLink(this)" href="#about_title">About</a></li>
-                    <li><a class="hover_text mx-4" onclick="setActiveLink(this)" href="#dev_skills">Skills</a></li>
-                    <li><a class="hover_text mx-4" onclick="setActiveLink(this)" href="#dev_portfolio">Portifolio</a>
-                    </li>
-                    <li><a class="hover_text" onclick="setActiveLink(this)" href="#">Contact</a></li>
-                </ul>
             </nav>
         </div>
     </header>
