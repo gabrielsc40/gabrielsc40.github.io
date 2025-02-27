@@ -105,6 +105,10 @@
   cursor: pointer;
 }
 
+.hover_text:focus {
+  color: #fff;
+}
+
 .nav-link:hover {
   color: #fff;
 }

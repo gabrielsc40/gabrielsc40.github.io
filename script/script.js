@@ -96,14 +96,6 @@ $(document).ready(function () {
   // Initialize with summary section visible
   $('#summary_job').addClass('show-section');
   
-  // Form submission handling
-  $('.contact-form').on('submit', function(e) {
-    e.preventDefault();
-    // Here you would normally handle the form submission with AJAX
-    // For now, just show an alert
-    alert('Mensagem enviada com sucesso! Obrigado pelo contato.');
-    this.reset();
-  });
 });
 
 // Add animation to skills items when they come into view

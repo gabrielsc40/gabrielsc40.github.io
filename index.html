@@ -88,7 +88,7 @@
         </div>
 
         <!-- Background Sobre -->
-        <div id="background_secondary"></div>
+    <div id="background_secondary">
         <div class="space"></div>
         <div class="container-fluid">
             <!-- Sobre -->
@@ -112,31 +112,17 @@
                     <div class="description_dev">
                         <div class="info_dev pb-2">
                         </div>
-                        <div class="info_dev pb-2">
-                            <div class="about_sub_title pb-3">
+                        <div class="info_dev">
+                            <div class="about_sub_title pb-4">
                                 <span>Full Stack Web Developer</span>
                             </div>
                         </div>
                         <div class="info_dev">
-                            <div class="about_description mb-3">
+                            <div class="about_description pb-4">
                                 <span>Sou um desenvolvedor PHP Full-stack com 1 ano e alguns meses de experiência no
                                     desenvolvimento de aplicações web robustas, escaláveis e de alto desempenho. Minha
                                     expertise abrange tanto o front-end quanto o back-end, permitindo-me criar soluções
                                     integradas que atendem às necessidades dos usuários e dos negócios.</span>
-                            </div>
-                            <div class="row mb-4">
-                                <div class="col-md-4 col-sm-5 about_info_title d-flex flex-column justify-content-start align-items-start">
-                                    <span>Birthday</span>
-                                    <span>Education</span>
-                                    <span>Phone</span>
-                                    <span>Email</span>
-                                </div>
-                                <div class="col-md-8 col-sm-7 about_info d-flex flex-column justify-content-start align-items-start">
-                                    <span>: Nov 13, 1999</span>
-                                    <span>: Sistema de Infomação (Anhanguera) - Em curso</span>
-                                    <span>: +55 (37) 99952-2120</span>
-                                    <span>: gabrielsimoesc40@gmail.com</span>
-                                </div>
                             </div>
                             <a href="cv/Currículo.pdf" download="Curriculo_Gabriel_Simoes.pdf">
                                 <button class="animated-button">
@@ -341,7 +327,6 @@
                                 <p>Painel de controle com visualização de dados em tempo real</p>
                                 <div class="portfolio-tags">
                                     <span>JavaScript</span>
-                                    <span>Chart.js</span>
                                     <span>Bootstrap</span>
                                 </div>
                             </div>
@@ -399,19 +384,21 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <form class="contact-form">
+                                    <form action="https://formsubmit.co/gabrielsimoesc40@gmail.com" method="POST" class="contact-form">
                                         <div class="mb-3">
-                                            <input type="text" class="form-control" placeholder="Seu Nome" required>
+                                            <input type="text" name="name" class="form-control" placeholder="Seu Nome" required>
                                         </div>
                                         <div class="mb-3">
-                                            <input type="email" class="form-control" placeholder="Seu Email" required>
+                                            <input type="email" name="email" class="form-control" placeholder="Seu Email" required>
                                         </div>
                                         <div class="mb-3">
-                                            <input type="text" class="form-control" placeholder="Assunto" required>
+                                            <input type="text" name="subject" class="form-control" placeholder="Assunto" required>
                                         </div>
                                         <div class="mb-3">
-                                            <textarea class="form-control" rows="5" placeholder="Mensagem" required></textarea>
+                                            <textarea name="message" class="form-control" rows="5" placeholder="Mensagem" required></textarea>
                                         </div>
+                                        <input type="hidden" name="_next" value="http://127.0.0.1:5500//thanks.html">
+                                        <input type="hidden" name="_captcha" value="false">
                                         <button type="submit" class="btn-submit">Enviar Mensagem</button>
                                     </form>
                                 </div>
@@ -432,6 +419,7 @@
                 </div>
             </div>
         </footer>
+    </div>
     </section>
 </body>
 
