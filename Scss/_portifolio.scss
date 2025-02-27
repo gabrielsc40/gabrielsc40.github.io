@@ -1,20 +1,126 @@
-.portifolio {
-  width: 400px !important;
-  height: 400px !important;
-  margin: 10px;
+/* Portfolio Section */
+#dev_portfolio {
+  position: relative;
+  z-index: 500;
+  padding-bottom: 5rem !important;
+}
+
+.portfolio-item {
   background-color: #202632;
   border: 0.1px solid #31394b;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-img img {
+  transform: scale(1.1);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 218, 210, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-info {
   text-align: center;
-  border-radius: 3px;
+  padding: 20px;
+  color: #fff;
 }
 
-.portifolio img {
-  width: 400px !important;
-  height: 400px !important;
-  transition: 0.5s ease;
+.portfolio-info h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-.portifolio img:hover {
-  width: auto;
-  height: 150px;
+.portfolio-info p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.portfolio-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.portfolio-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  color: var(--main-color);
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.portfolio-links a:hover {
+  background: var(--bg-color);
+  color: #fff;
+}
+
+.portfolio-content {
+  padding: 20px;
+}
+
+.portfolio-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--second-main-color);
+  margin-bottom: 10px;
+}
+
+.portfolio-content p {
+  color: var(--text-color);
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.portfolio-tags span {
+  background: rgba(0, 218, 210, 0.2);
+  color: var(--second-main-color);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
 }
