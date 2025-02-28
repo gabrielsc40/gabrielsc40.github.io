@@ -1,429 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Material Icon -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!-- Font ROBOTO -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <!-- script JS -->
-    <!-- <script src="script/script.js"></script> -->
-    <!-- CSS -->
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Simões</title>
-</head>
-
-<body>
-    <section>
-        <!-- Background Topo -->
-        <div class="background">
-            <div class="grid-pattern"></div>
-        </div>
-
-        <header>
-            <!-- Navbar -->
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <span class="tag_name">< Gabriel Simões /></span>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <div class="hamburger">
-                                <input class="checkbox" type="checkbox" />
-                                <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
-                                <path class="lineTop line" stroke-linecap="round" stroke-width="4" stroke="black" d="M6 11L44 11"></path>
-                                <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 24H43" class="lineMid line"></path>
-                                <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 37H43" class="lineBottom line" ></path>
-                                </svg>
-                            </div>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav list_menu ms-auto">
-                                <li class="nav-item"><a class="nav-link hover_text" href="#nav">Home</a></li>
-                                <li class="nav-item"><a class="nav-link hover_text" href="#about_title">About</a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link hover_text" href="#dev_skills">Skills</a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link hover_text" href="#dev_portfolio">Portfolio</a></li>
-                                <li class="nav-item"><a class="nav-link hover_text" href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <!-- Corpo -->
-
-        <div class="container-fluid">
-            <!-- Sumario -->
-            <div id="summary_job" class="d-flex flex-column justify-content-center align-items-center">
-                <div class="dev_name">
-                    <span>Olá, eu sou <span class="name">Gabriel Simões</span></span>
-                </div>
-                <p class="description_job">
-                    Atuo como Desenvolvedor Full Stack, responsável por projetar, desenvolver e manter
-                    aplicações web completas, desde a concepção até a entrega final.
-                </p>
-                <div>
-                    <a href="https://www.linkedin.com/in/gabriel-sim%C3%B5es-231634179/" target="linkedin" type="button"
-                        class="btn btn_midia_social me-2"><i class="bi bi-linkedin"></i></a>
-                    <a href="https://github.com/gabrielsc40" target="github" type="button" class="btn btn_midia_social"><i
-                            class="bi bi-github"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Background Sobre -->
-    <div id="background_secondary">
-        <div class="space"></div>
-        <div class="container-fluid">
-            <!-- Sobre -->
-            <div id="about_title" class="d-flex justify-content-center align-items-center">
-                <span class="title_primary">ABOUT ME</span>
-                <span class="title_secondary">ABOUT ME</span>
-            </div>
-            <div class="line">
-                <div class="line_primary"></div>
-                <div class="line_secondary"></div>
-            </div>
-
-            <div id="about_dev" class="row">
-                <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
-                    <div class="dev_photo">
-                        <img src="img/photo_dev.jpg" alt="Gabriel Simões">
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-12 d-flex justify-content-start align-items-center">
-                    <div class="description_dev">
-                        <div class="info_dev pb-2">
-                        </div>
-                        <div class="info_dev">
-                            <div class="about_sub_title pb-4">
-                                <span>Full Stack Web Developer</span>
-                            </div>
-                        </div>
-                        <div class="info_dev">
-                            <div class="about_description pb-4">
-                                <span>Sou um desenvolvedor web Full-stack com 1 ano e alguns meses de experiência no
-                                    desenvolvimento de aplicações web robustas, escaláveis e de alto desempenho. Minha
-                                    expertise abrange tanto o front-end quanto o back-end, permitindo-me criar soluções
-                                    integradas que atendem às necessidades dos usuários e dos negócios.</span>
-                            </div>
-                            <a href="cv/Currículo.pdf" download="Curriculo_Gabriel_Simoes.pdf">
-                                <button class="animated-button">
-                                    <span>Download CV</span>
-                                    <span></span>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Habilidades -->
-        <div id="dev_skills" class="pb-5">
-            <div class="pb-5">
-                <div id="skills_title" class="d-flex justify-content-center align-items-center">
-                    <span class="title_primary">MY SKILLS</span>
-                    <span class="title_secondary">MY SKILLS</span>
-                </div>
-                <div class="line">
-                    <div class="line_primary"></div>
-                    <div class="line_secondary"></div>
-                </div>
-            </div>
-
-            <div class="container pt-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="skill skill_html d-flex flex-column justify-content-center align-items-center">
-                            <img src="img/skill_html.png" alt="HTML">
-                            <span class="title-caption">HTML</span>
-                            <span class="caption">Tenho ampla experiência em HTML, com habilidades para estruturar páginas
-                                web de forma semântica e acessível. Domino o uso de tags, atributos e elementos
-                                essenciais.</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="skill skill_css d-flex flex-column justify-content-center align-items-center">
-                            <img src="img/skill_css.png" alt="CSS">
-                            <span class="title-caption">CSS</span>
-                            <span class="caption">Capacidade para criar designs responsivos e visualmente atraentes. Domino
-                                técnicas como Flexbox, Grid Layout, animações e transições, SASS garantindo interfaces
-                                modernas e fluidas.</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="skill skill_javascript d-flex flex-column justify-content-center align-items-center">
-                            <img src="img/skill_javascript.png" alt="JavaScript">
-                            <span class="title-caption">JavaScript</span>
-                            <span class="caption">Possuo sólida experiência em JavaScript, com habilidades para desenvolver
-                                aplicações web dinâmicas e interativas. Domino conceitos como manipulação do DOM, eventos,
-                                AJAX</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="skill skill_PHP d-flex flex-column justify-content-center align-items-center">
-                            <img src="img/skill_php.png" alt="PHP">
-                            <span class="title-caption">PHP</span>
-                            <span class="caption">Tenho experiência sólida em PHP, com habilidades para desenvolver
-                                aplicações web dinâmicas e escaláveis. Manipulação de bancos de dados
-                                MySQL, criação de APIs RESTful e integração com front-end.</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="skill skill_Bootstrap d-flex flex-column justify-content-center align-items-center">
-                            <img src="img/skill_bootstrap.png" alt="Bootstrap">
-                            <span class="title-caption">BOOTSTRAP</span>
-                            <span class="caption">Possuo habilidades avançadas em Bootstrap, com capacidade para criar
-                                interfaces responsivas e modernas de forma ágil. Domino o uso do sistema de grid e
-                                componentes pré-estilizados.</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="skill skill_Jquery d-flex flex-column justify-content-center align-items-center">
-                            <img src="img/skill_jquery.png" alt="jQuery">
-                            <span class="title-caption">JQUERY</span>
-                            <span class="caption">Tenho experiência em jQuery, com habilidades para simplificar a
-                                manipulação do DOM, gerenciamento de eventos e criação de animações de forma
-                                eficiente.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Portfólio -->
-        <div id="dev_portfolio" class="pb-5">
-            <div class="pb-5">
-                <div id="portfolio_title" class="d-flex justify-content-center align-items-center">
-                    <span class="title_primary">PORTFOLIO</span>
-                    <span class="title_secondary">PORTFOLIO</span>
-                </div>
-                <div class="line">
-                    <div class="line_primary"></div>
-                    <div class="line_secondary"></div>
-                </div>
-            </div>
-
-            <div class="container pt-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="portfolio-item">
-                            <div class="portfolio-img">
-                                <img src="img/relatorio_tcpdf.jpg" alt="TCPDF Project">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <h4>TCPDF</h4>
-                                        <p>Geração de documentos PDF dinâmicos</p>
-                                        <div class="portfolio-links">
-                                            <a href="doc/Cobrança de contratos.pdf" class="portfolio-details-link"><i class="bi bi-link-45deg"></i></a>
-                                            <a href="https://github.com/gabrielsc40/gerador_relatorio_pdf" class="portfolio-github-link"><i class="bi bi-github"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-content">
-                                <h3>TCPDF</h3>
-                                <p>Sistema de geração de documentos PDF com PHP</p>
-                                <div class="portfolio-tags">
-                                    <span>PHP</span>
-                                    <span>TCPDF</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="portfolio-item">
-                            <div class="portfolio-img desenvolvimento">
-                                <img src="img/programando.gif" alt="E-commerce Project">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <h4>E-commerce</h4>
-                                        <p>Loja virtual com sistema de pagamentos</p>
-                                        <div class="portfolio-links">
-                                            <a href="#" class="portfolio-details-link"><i class="bi bi-link-45deg"></i></a>
-                                            <a href="#" class="portfolio-github-link"><i class="bi bi-github"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-content">
-                                <h3>E-commerce (em desenvolvimento)</h3>
-                                <p>Plataforma de vendas online com integração de pagamentos</p>
-                                <div class="portfolio-tags">
-                                    <span>PHP</span>
-                                    <span>MySQL</span>
-                                    <span>Bootstrap</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="portfolio-item">
-                            <div class="portfolio-img desenvolvimento">
-                                <img src="img/programando.gif" alt="CRM System">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <h4>CRM</h4>
-                                        <p>Sistema de gerenciamento de clientes</p>
-                                        <div class="portfolio-links">
-                                            <a href="#" class="portfolio-details-link"><i class="bi bi-link-45deg"></i></a>
-                                            <a href="#" class="portfolio-github-link"><i class="bi bi-github"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-content">
-                                <h3>CRM (em desenvolvimento)</h3>
-                                <p>Sistema completo para gestão de relacionamento com clientes</p>
-                                <div class="portfolio-tags">
-                                    <span>PHP</span>
-                                    <span>jQuery</span>
-                                    <span>MySQL</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row justify-content-center mt-3">
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="portfolio-item">
-                            <div class="portfolio-img desenvolvimento">
-                                <img src="img/programando.gif" alt="Dashboard Project">
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-info">
-                                        <h4>Dashboard</h4>
-                                        <p>Painel administrativo com gráficos e relatórios</p>
-                                        <div class="portfolio-links">
-                                            <a href="#" class="portfolio-details-link"><i class="bi bi-link-45deg"></i></a>
-                                            <a href="#" class="portfolio-github-link"><i class="bi bi-github"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-content">
-                                <h3>Dashboard (em desenvolvimento)</h3>
-                                <p>Painel de controle com visualização de dados em tempo real</p>
-                                <div class="portfolio-tags">
-                                    <span>JavaScript</span>
-                                    <span>Bootstrap</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Contato -->
-        <div id="contact" class="pb-5">
-            <div class="pb-5">
-                <div id="contact_title" class="d-flex justify-content-center align-items-center">
-                    <span class="title_primary">CONTACT</span>
-                    <span class="title_secondary">CONTACT</span>
-                </div>
-                <div class="line">
-                    <div class="line_primary"></div>
-                    <div class="line_secondary"></div>
-                </div>
-            </div>
-
-            <div class="container pt-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-md-10 col-sm-12">
-                        <div class="contact-container">
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <div class="contact-info">
-                                        <div class="contact-item">
-                                            <i class="bi bi-geo-alt-fill"></i>
-                                            <div>
-                                                <h3>Localização</h3>
-                                                <p>Divinópolis, MG - Brasil</p>
-                                            </div>
-                                        </div>
-                                        <div class="contact-item">
-                                            <i class="bi bi-envelope-fill"></i>
-                                            <div>
-                                                <h3>Email</h3>
-                                                <p>gabrielsimoesc40@gmail.com</p>
-                                            </div>
-                                        </div>
-                                        <div class="contact-item">
-                                            <i class="bi bi-phone-fill"></i>
-                                            <div>
-                                                <h3>Telefone</h3>
-                                                <p>+55 (37) 99952-2120</p>
-                                            </div>
-                                        </div>
-                                        <div class="social-links">
-                                            <a href="https://www.linkedin.com/in/gabriel-sim%C3%B5es-231634179/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                                            <a href="https://github.com/gabrielsc40" target="_blank"><i class="bi bi-github"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <form action="https://formsubmit.co/gabrielsimoesc40@gmail.com" method="POST" class="contact-form">
-                                        <div class="mb-3">
-                                            <input type="text" name="name" class="form-control" placeholder="Seu Nome" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="email" name="email" class="form-control" placeholder="Seu Email" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="text" name="subject" class="form-control" placeholder="Assunto" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <textarea name="message" class="form-control" rows="5" placeholder="Mensagem" required></textarea>
-                                        </div>
-                                        <input type="hidden" name="_next" value="http://127.0.0.1:5500//thanks.html">
-                                        <input type="hidden" name="_captcha" value="false">
-                                        <button type="submit" class="btn-submit">Enviar Mensagem</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <p>&copy; 2025 Gabriel Simões. Todos os direitos reservados.</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-    </section>
-</body>
-
-</html>
-
 <style>
     @charset "UTF-8";
 * {
@@ -1489,3 +1063,429 @@ $(window).on('scroll', function() {
   });
 });
 </script>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Material Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Font ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- script JS -->
+    <!-- <script src="script/script.js"></script> -->
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Simões</title>
+</head>
+
+<body>
+    <section>
+        <!-- Background Topo -->
+        <div class="background">
+            <div class="grid-pattern"></div>
+        </div>
+
+        <header>
+            <!-- Navbar -->
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <span class="tag_name">< Gabriel Simões /></span>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="hamburger">
+                                <input class="checkbox" type="checkbox" />
+                                <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
+                                <path class="lineTop line" stroke-linecap="round" stroke-width="4" stroke="black" d="M6 11L44 11"></path>
+                                <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 24H43" class="lineMid line"></path>
+                                <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 37H43" class="lineBottom line" ></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav list_menu ms-auto">
+                                <li class="nav-item"><a class="nav-link hover_text" href="#nav">Home</a></li>
+                                <li class="nav-item"><a class="nav-link hover_text" href="#about_title">About</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link hover_text" href="#dev_skills">Skills</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link hover_text" href="#dev_portfolio">Portfolio</a></li>
+                                <li class="nav-item"><a class="nav-link hover_text" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Corpo -->
+
+        <div class="container-fluid">
+            <!-- Sumario -->
+            <div id="summary_job" class="d-flex flex-column justify-content-center align-items-center">
+                <div class="dev_name">
+                    <span>Olá, eu sou <span class="name">Gabriel Simões</span></span>
+                </div>
+                <p class="description_job">
+                    Atuo como Desenvolvedor Full Stack, responsável por projetar, desenvolver e manter
+                    aplicações web completas, desde a concepção até a entrega final.
+                </p>
+                <div>
+                    <a href="https://www.linkedin.com/in/gabriel-sim%C3%B5es-231634179/" target="linkedin" type="button"
+                        class="btn btn_midia_social me-2"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/gabrielsc40" target="github" type="button" class="btn btn_midia_social"><i
+                            class="bi bi-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background Sobre -->
+    <div id="background_secondary">
+        <div class="space"></div>
+        <div class="container-fluid">
+            <!-- Sobre -->
+            <div id="about_title" class="d-flex justify-content-center align-items-center">
+                <span class="title_primary">ABOUT ME</span>
+                <span class="title_secondary">ABOUT ME</span>
+            </div>
+            <div class="line">
+                <div class="line_primary"></div>
+                <div class="line_secondary"></div>
+            </div>
+
+            <div id="about_dev" class="row">
+                <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                    <div class="dev_photo">
+                        <img src="img/photo_dev.jpg" alt="Gabriel Simões">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 d-flex justify-content-start align-items-center">
+                    <div class="description_dev">
+                        <div class="info_dev pb-2">
+                        </div>
+                        <div class="info_dev">
+                            <div class="about_sub_title pb-4">
+                                <span>Full Stack Web Developer</span>
+                            </div>
+                        </div>
+                        <div class="info_dev">
+                            <div class="about_description pb-4">
+                                <span>Sou um desenvolvedor web Full-stack com 1 ano e alguns meses de experiência no
+                                    desenvolvimento de aplicações web robustas, escaláveis e de alto desempenho. Minha
+                                    expertise abrange tanto o front-end quanto o back-end, permitindo-me criar soluções
+                                    integradas que atendem às necessidades dos usuários e dos negócios.</span>
+                            </div>
+                            <a href="cv/Currículo.pdf" download="Curriculo_Gabriel_Simoes.pdf">
+                                <button class="animated-button">
+                                    <span>Download CV</span>
+                                    <span></span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Habilidades -->
+        <div id="dev_skills" class="pb-5">
+            <div class="pb-5">
+                <div id="skills_title" class="d-flex justify-content-center align-items-center">
+                    <span class="title_primary">MY SKILLS</span>
+                    <span class="title_secondary">MY SKILLS</span>
+                </div>
+                <div class="line">
+                    <div class="line_primary"></div>
+                    <div class="line_secondary"></div>
+                </div>
+            </div>
+
+            <div class="container pt-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="skill skill_html d-flex flex-column justify-content-center align-items-center">
+                            <img src="img/skill_html.png" alt="HTML">
+                            <span class="title-caption">HTML</span>
+                            <span class="caption">Tenho ampla experiência em HTML, com habilidades para estruturar páginas
+                                web de forma semântica e acessível. Domino o uso de tags, atributos e elementos
+                                essenciais.</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="skill skill_css d-flex flex-column justify-content-center align-items-center">
+                            <img src="img/skill_css.png" alt="CSS">
+                            <span class="title-caption">CSS</span>
+                            <span class="caption">Capacidade para criar designs responsivos e visualmente atraentes. Domino
+                                técnicas como Flexbox, Grid Layout, animações e transições, SASS garantindo interfaces
+                                modernas e fluidas.</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="skill skill_javascript d-flex flex-column justify-content-center align-items-center">
+                            <img src="img/skill_javascript.png" alt="JavaScript">
+                            <span class="title-caption">JavaScript</span>
+                            <span class="caption">Possuo sólida experiência em JavaScript, com habilidades para desenvolver
+                                aplicações web dinâmicas e interativas. Domino conceitos como manipulação do DOM, eventos,
+                                AJAX</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="skill skill_PHP d-flex flex-column justify-content-center align-items-center">
+                            <img src="img/skill_php.png" alt="PHP">
+                            <span class="title-caption">PHP</span>
+                            <span class="caption">Tenho experiência sólida em PHP, com habilidades para desenvolver
+                                aplicações web dinâmicas e escaláveis. Manipulação de bancos de dados
+                                MySQL, criação de APIs RESTful e integração com front-end.</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="skill skill_Bootstrap d-flex flex-column justify-content-center align-items-center">
+                            <img src="img/skill_bootstrap.png" alt="Bootstrap">
+                            <span class="title-caption">BOOTSTRAP</span>
+                            <span class="caption">Possuo habilidades avançadas em Bootstrap, com capacidade para criar
+                                interfaces responsivas e modernas de forma ágil. Domino o uso do sistema de grid e
+                                componentes pré-estilizados.</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="skill skill_Jquery d-flex flex-column justify-content-center align-items-center">
+                            <img src="img/skill_jquery.png" alt="jQuery">
+                            <span class="title-caption">JQUERY</span>
+                            <span class="caption">Tenho experiência em jQuery, com habilidades para simplificar a
+                                manipulação do DOM, gerenciamento de eventos e criação de animações de forma
+                                eficiente.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfólio -->
+        <div id="dev_portfolio" class="pb-5">
+            <div class="pb-5">
+                <div id="portfolio_title" class="d-flex justify-content-center align-items-center">
+                    <span class="title_primary">PORTFOLIO</span>
+                    <span class="title_secondary">PORTFOLIO</span>
+                </div>
+                <div class="line">
+                    <div class="line_primary"></div>
+                    <div class="line_secondary"></div>
+                </div>
+            </div>
+
+            <div class="container pt-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img">
+                                <img src="img/relatorio_tcpdf.jpg" alt="TCPDF Project">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h4>TCPDF</h4>
+                                        <p>Geração de documentos PDF dinâmicos</p>
+                                        <div class="portfolio-links">
+                                            <a href="doc/Cobrança de contratos.pdf" class="portfolio-details-link"><i class="bi bi-link-45deg"></i></a>
+                                            <a href="https://github.com/gabrielsc40/gerador_relatorio_pdf" class="portfolio-github-link"><i class="bi bi-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3>TCPDF</h3>
+                                <p>Sistema de geração de documentos PDF com PHP</p>
+                                <div class="portfolio-tags">
+                                    <span>PHP</span>
+                                    <span>TCPDF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img desenvolvimento">
+                                <img src="img/programando.gif" alt="E-commerce Project">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h4>E-commerce</h4>
+                                        <p>Loja virtual com sistema de pagamentos</p>
+                                        <div class="portfolio-links">
+                                            <a href="#" class="portfolio-details-link"><i class="bi bi-link-45deg"></i></a>
+                                            <a href="#" class="portfolio-github-link"><i class="bi bi-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3>E-commerce (em desenvolvimento)</h3>
+                                <p>Plataforma de vendas online com integração de pagamentos</p>
+                                <div class="portfolio-tags">
+                                    <span>PHP</span>
+                                    <span>MySQL</span>
+                                    <span>Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img desenvolvimento">
+                                <img src="img/programando.gif" alt="CRM System">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h4>CRM</h4>
+                                        <p>Sistema de gerenciamento de clientes</p>
+                                        <div class="portfolio-links">
+                                            <a href="#" class="portfolio-details-link"><i class="bi bi-link-45deg"></i></a>
+                                            <a href="#" class="portfolio-github-link"><i class="bi bi-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3>CRM (em desenvolvimento)</h3>
+                                <p>Sistema completo para gestão de relacionamento com clientes</p>
+                                <div class="portfolio-tags">
+                                    <span>PHP</span>
+                                    <span>jQuery</span>
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center mt-3">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img desenvolvimento">
+                                <img src="img/programando.gif" alt="Dashboard Project">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h4>Dashboard</h4>
+                                        <p>Painel administrativo com gráficos e relatórios</p>
+                                        <div class="portfolio-links">
+                                            <a href="#" class="portfolio-details-link"><i class="bi bi-link-45deg"></i></a>
+                                            <a href="#" class="portfolio-github-link"><i class="bi bi-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3>Dashboard (em desenvolvimento)</h3>
+                                <p>Painel de controle com visualização de dados em tempo real</p>
+                                <div class="portfolio-tags">
+                                    <span>JavaScript</span>
+                                    <span>Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contato -->
+        <div id="contact" class="pb-5">
+            <div class="pb-5">
+                <div id="contact_title" class="d-flex justify-content-center align-items-center">
+                    <span class="title_primary">CONTACT</span>
+                    <span class="title_secondary">CONTACT</span>
+                </div>
+                <div class="line">
+                    <div class="line_primary"></div>
+                    <div class="line_secondary"></div>
+                </div>
+            </div>
+
+            <div class="container pt-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 col-sm-12">
+                        <div class="contact-container">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="contact-info">
+                                        <div class="contact-item">
+                                            <i class="bi bi-geo-alt-fill"></i>
+                                            <div>
+                                                <h3>Localização</h3>
+                                                <p>Divinópolis, MG - Brasil</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-item">
+                                            <i class="bi bi-envelope-fill"></i>
+                                            <div>
+                                                <h3>Email</h3>
+                                                <p>gabrielsimoesc40@gmail.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-item">
+                                            <i class="bi bi-phone-fill"></i>
+                                            <div>
+                                                <h3>Telefone</h3>
+                                                <p>+55 (37) 99952-2120</p>
+                                            </div>
+                                        </div>
+                                        <div class="social-links">
+                                            <a href="https://www.linkedin.com/in/gabriel-sim%C3%B5es-231634179/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                            <a href="https://github.com/gabrielsc40" target="_blank"><i class="bi bi-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <form action="https://formsubmit.co/gabrielsimoesc40@gmail.com" method="POST" class="contact-form">
+                                        <div class="mb-3">
+                                            <input type="text" name="name" class="form-control" placeholder="Seu Nome" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="email" name="email" class="form-control" placeholder="Seu Email" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" name="subject" class="form-control" placeholder="Assunto" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <textarea name="message" class="form-control" rows="5" placeholder="Mensagem" required></textarea>
+                                        </div>
+                                        <input type="hidden" name="_next" value="http://127.0.0.1:5500//thanks.html">
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2025 Gabriel Simões. Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </section>
+</body>
+
+</html>
