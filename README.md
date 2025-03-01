@@ -48,6 +48,6 @@ LinkedIn: Gabriel Simões
 GitHub: gabrielsc40
 
 Licença
-Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+Este projeto tem os direitos reservados para Gabriel Simões.
 
-Nota: Este portfólio está em constante evolução, com novos projetos e atualizações sendo adicionados regularmente. Fique à vontade para explorar e entrar em contato caso tenha alguma dúvida ou oportunidade de colaboração!
+Nota: Este portfólio está em constante evolução, com novos projetos e atualizações sendo adicionados regularmente. Fique à vontade para explorar e entrar em contato caso tenha alguma dúvida!
